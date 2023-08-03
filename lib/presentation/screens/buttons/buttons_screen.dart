@@ -12,9 +12,9 @@ class ButtonsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Buttons Screen'),
       ),
-      body: _ButtonsView(),
+      body: const  _ButtonsView(),
       floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.arrow_back_ios_new_rounded),
+          child: const Icon(Icons.arrow_back_ios_new_rounded),
           onPressed: () {
             context.pop();
           }),
