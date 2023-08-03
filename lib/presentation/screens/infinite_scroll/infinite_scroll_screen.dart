@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -45,9 +46,10 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
     addFiveImages();
     isLoading = false;
 
-    //TO DO REVISAR SI ESTA MONTADO EL COMPONENTE/WIDGET
-    if (isMounted) return;
+    if (!isMounted) return;
     setState(() {});
+
+    //TODO: mover scroll
   }
 
   void addFiveImages() {
@@ -80,8 +82,15 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-          onPressed: () => context.pop(),
-          child: const Icon(Icons.arrow_back_ios_new_outlined)),
+        onPressed: () => context.pop(),
+        //child: const Icon(Icons.arrow_back_ios_new_outlined),
+        child: isLoading
+          ? SpinPerfect(
+          infinite: true,
+          child: const Icon(Icons.refresh_rounded)
+        )
+        : FadeIn(child: const Icon(Icons.arrow_back_ios_new_outlined)),
+      ),
     );
   }
 }
