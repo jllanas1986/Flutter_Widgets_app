@@ -28,8 +28,8 @@ class _SideMenuState extends State<SideMenu> {
           widget.scaffoldKey.currentState?.closeDrawer();
         },
         children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(28, 20, 16, 10),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(28, 20, 16, 10),
             child: Text('Main'),
           ),
           ...appMenuItems.sublist(0, 3).map(
