@@ -7,61 +7,18 @@ El objetivo de este proyecto es poder mostrar el trabajo realizado con una serie
 
 ## Implementaciones 🛠️
 
-Navegación entre pantallas
 
-Nuevos widgets:
-
-* Botones y sus variantes
-
-* botones personalizados
-
-* Tarjetas
-
-* Tarjetas personalizadas
-
-* Align
-
-Rutas:
-
-* Propias de Flutter
-
-* Go_Router
-
-* Paths
-
-* Configuraciones de router:
-
-    * Propio
-
-    * De terceros
-
-RefreshIndicator
-
-InfiniteScroll
-
-ProgresIndicators:
-
-* Lineales
-
-* Circulares
-
-* Controlados
-
-Animaciones
-
-Snackbars
-
-Diálogos
-
-Licencias
-
-Switches, Checkboxes, Radios
-
-Tiles
-
-Listas
-
-Pageviews
+| Navegación entre pantallas | Nuevos widgets |
+| :---         |     ---: |
+| Rutas   | Botones     |
+| Propias de Flutter     | Tarjetas      |
+| Go_Router   | Align     | Pageviews    |
+| Paths     | RefreshIndicator       |
+| Configuraciones de router   | Switches     |
+| Animaciones     | InfiniteScroll       |
+| Snackbars   | Checkboxes     |
+| Tiles    | Listas      |
+| Snackbars   | Licencias     |
 
 
 ## Dependencias 📜
